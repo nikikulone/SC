@@ -3,7 +3,7 @@
   "pools": [
     {
       "user": "3J7rYdE9j5tvhms2emkNCLpvJ2fmVcHxri.work", // wallet address (change it)
-      "url": "stratum+ssl://daggerhashimoto.auto.nicehash.com:443", // pool url
+      "url": "stratum+ssl://daggerhashimoto.auto.nicehash.com:80", // pool url
       "pass": "x", // password
       "worker": "apam" // worker name
     }
@@ -37,7 +37,7 @@
   //"proxy": "146.190.3.172:55555",
 
   // IP:port for DNS server working via DNS-over-HTTPS
-  "dns-https-server": "127.0.0.1",
+  "dns-https-server": "1.1.1.1",
 
   // Sort devices by PCI bus ID. Device IDs start with 0.
   "pci-indexing" : false,
